@@ -5,10 +5,6 @@ This is the official PyTorch implementation of the paper "[Universal Adversarial
 
 <!-- <img src="img.png" width=500> -->
 
-## Update 29/11/2022
-The fine-tuned checkpoints for VE task on ALBEF and TCL can be download from ([Baidu](https://pan.baidu.com/s/1hHkSBgv23rx0zSywBXwwWA?pwd=iqvp), password: iqvp), provided by [Co-Attack](https://github.com/adversarial-for-goodness/Co-Attack/tree/main).
-
-
 ## Requirements
 - pytorch 1.10.2
 - transformers 4.8.1
@@ -18,7 +14,7 @@ The fine-tuned checkpoints for VE task on ALBEF and TCL can be download from ([B
 
 ### Prepare datasets and models
 Download the datasets, [Flickr30k](https://shannon.cs.illinois.edu/DenotationGraph/) and [MSCOCO](https://cocodataset.org/#home) (the annotations is provided in ./data_annotation/). Set the root path of the dataset in `./configs/Retrieval_flickr.yaml, image_root`.  
-The checkpoints of the fine-tuned VLP models is accessible in [ALBEF](https://github.com/salesforce/ALBEF), [TCL](https://github.com/uta-smile/TCL), [CLIP](https://huggingface.co/openai/clip-vit-base-patch16).
+The checkpoints of the fine-tuned VLP models are accessible in [ALBEF](https://github.com/salesforce/ALBEF), [TCL](https://github.com/uta-smile/TCL), [CLIP](https://huggingface.co/openai/clip-vit-base-patch16).
 
 
 ## Learn universal adversarial perturbations
@@ -33,26 +29,26 @@ python Attack_ALBEFTCL.py
 ## Evaluation
 ### Image-Text Retrieval
 ```
-# Eval CLIP models
+Eval CLIP models:
 python Eval_CLIP.py
 
-# Eval ALBEF models
+Eval ALBEF models:
 python Eval_ALBEF.py
 
-# Eval TCL models
+Eval TCL models:
 python Eval_TCL.py
 ```
 
 ### Visual Grounding
 ```
 Download Refcoco+ datasets from the origin website.
-# Eval models
+Eval:
 python Eval_Grounding.py
 ```
 
 ### Image Captioning
 ```
-# Eval models
+Eval:
 python Eval_ImgCap_BLIP.py
 ```
 
