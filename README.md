@@ -41,14 +41,14 @@ python Eval_TCL.py
 ### Visual Grounding
 ```
 Download Refcoco+ datasets from the origin website, and set 'image_root' in configs/Grounding.yaml accordingly.
-Eval:
+# Eval:
 python Eval_Grounding.py
 ```
 
 ### Image Captioning
 ```
 Download the MSCOCO dataset from the original websites, and set 'image_root' in configs/caption_coco.yaml accordingly.
-Eval:
+# Eval:
 python Eval_ImgCap_BLIP.py
 ```
 
