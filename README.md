@@ -14,11 +14,10 @@ This is the official PyTorch implementation of the paper "[Universal Adversarial
 
 ### Prepare datasets and models
 Download the datasets, [Flickr30k](https://shannon.cs.illinois.edu/DenotationGraph/) and [MSCOCO](https://cocodataset.org/#home) (the annotations is provided in ./data_annotation/). Set the root path of the dataset in `./configs/Retrieval_flickr.yaml, image_root`.  
-The checkpoints of the fine-tuned VLP models are accessible in [ALBEF](https://github.com/salesforce/ALBEF), [TCL](https://github.com/uta-smile/TCL), [CLIP](https://huggingface.co/openai/clip-vit-base-patch16).
-
+The checkpoints of the fine-tuned VLP models are accessible in [CLIP](https://huggingface.co/openai/clip-vit-base-patch16), [ALBEF](https://github.com/salesforce/ALBEF), [TCL](https://github.com/uta-smile/TCL), [BLIP](https://github.com/salesforce/BLIP/tree/main).
+Set paths of source/target model checkpoint, datasets and others in corresponding main files. 
 
 ## Learn universal adversarial perturbations
-Set paths of source/target model checkpoint, datasets and others in corresponding main files 
 ```
 # Learn UAPs by taking CLIP as the victim
 python RetrievalEval.py
@@ -41,13 +40,14 @@ python Eval_TCL.py
 
 ### Visual Grounding
 ```
-Download Refcoco+ datasets from the origin website.
+Download Refcoco+ datasets from the origin website, and set 'image_root' in configs/Grounding.yaml accordingly.
 Eval:
 python Eval_Grounding.py
 ```
 
 ### Image Captioning
 ```
+Download the MSCOCO dataset from the original websites, and set 'image_root' in configs/caption_coco.yaml accordingly.
 Eval:
 python Eval_ImgCap_BLIP.py
 ```
@@ -64,4 +64,4 @@ If you find this code to be useful for your research, please consider citing.
 ```
 
 ## Reference
-- [ALBEF](https://github.com/salesforce/ALBEF), [Co-Attack](https://github.com/adversarial-for-goodness/Co-Attack/tree/main), [SGA](https://github.com/Zoky-2020/SGA/tree/main).
+- [Co-Attack](https://github.com/adversarial-for-goodness/Co-Attack/tree/main), [SGA](https://github.com/Zoky-2020/SGA/tree/main), [ALBEF](https://github.com/salesforce/ALBEF), [BLIP](https://github.com/salesforce/BLIP/tree/main).
