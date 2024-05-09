@@ -1,0 +1,28 @@
+train_file: '/scratch/itee/uqpzha11/noise/cross_modal_attack/SNLI-VE/data/snli_ve_train.jsonl'
+val_file: '/scratch/itee/uqpzha11/noise/cross_modal_attack/SNLI-VE/data/snli_ve_dev.jsonl'
+test_file: '/scratch/itee/uqpzha11/noise/cross_modal_attack/SNLI-VE/data/snli_ve_test.jsonl'
+
+image_root: '/scratch/itee/uqpzha11/Datasets/flickr30k_images/flickr30k_images'
+
+image_res: 384
+batch_size_train: 8
+batch_size_test: 4
+
+alpha: 0.4
+distill: False
+warm_up: False
+
+epsilon: 2
+num_iters: 10
+
+bert_config: 'configs/config_bert.json'
+
+optimizer: {opt: adamW, lr: 2e-5, weight_decay: 0.02}
+schedular: {sched: cosine, lr: 2e-5, epochs: 5, min_lr: 1e-6, decay_rate: 1, warmup_lr: 1e-5, warmup_epochs: 1, cooldown_epochs: 0}
+
+
+
+
+
+
+
