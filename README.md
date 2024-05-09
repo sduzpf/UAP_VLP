@@ -29,13 +29,13 @@ python Attack_ALBEFTCL.py
 ## Evaluation
 ### Image-Text Retrieval
 ```
-Eval CLIP models:
+# Eval CLIP models:
 python Eval_CLIP.py
 
-Eval ALBEF models:
+# Eval ALBEF models:
 python Eval_ALBEF.py
 
-Eval TCL models:
+# Eval TCL models:
 python Eval_TCL.py
 ```
 
