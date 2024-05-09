@@ -14,10 +14,12 @@ This is the official PyTorch implementation of the paper "[Universal Adversarial
 
 ### Prepare datasets and models
 Download the datasets, [Flickr30k](https://shannon.cs.illinois.edu/DenotationGraph/) and [MSCOCO](https://cocodataset.org/#home) (the annotations are provided in ./data_annotation/), and put them into `./Dataset`. Set the root path of the dataset in `./configs/Retrieval_flickr.yaml, image_root`.  
+
 The checkpoints of the fine-tuned VLP models are accessible in [CLIP](https://huggingface.co/openai/clip-vit-base-patch16), [ALBEF](https://github.com/salesforce/ALBEF), [TCL](https://github.com/uta-smile/TCL), [BLIP](https://github.com/salesforce/BLIP/tree/main), and put them into `./checkpoint`.
-Set paths of source/target model checkpoint, datasets and others in corresponding main files. 
 
 ## Learn universal adversarial perturbations
+Set paths of source/target model names and checkpoints, dataset names and roots, test file path, original_rank_index_path and so on in corresponding main files before running them. 
+
 ```
 # Learn UAPs by taking CLIP as the victim
 python RetrievalEval.py
