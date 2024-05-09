@@ -64,4 +64,4 @@ If you find this code to be useful for your research, please consider citing.
 ```
 
 ## Reference
-- [ALBEF](https://github.com/salesforce/ALBEF)
+- [ALBEF](https://github.com/salesforce/ALBEF), [Co-Attack](https://github.com/adversarial-for-goodness/Co-Attack/tree/main), [SGA](https://github.com/Zoky-2020/SGA/tree/main).
