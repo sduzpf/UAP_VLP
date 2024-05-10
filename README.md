@@ -1,5 +1,5 @@
 
-# [Universal Adversarial Perturbations for Vision-Language Pre-trained Models](https://arxiv.org/abs/2206.09391)
+# [Universal Adversarial Perturbations for Vision-Language Pre-trained Models](https://arxiv.org/abs/2405.05524)
 
 This is the official PyTorch implementation of the paper "[Universal Adversarial Perturbations for Vision-Language Pre-trained Models](https://arxiv.org/abs/2405.05524)" at *SIGIR 2024*. 
 
