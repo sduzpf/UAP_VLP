@@ -1,7 +1,7 @@
 
 # [Universal Adversarial Perturbations for Vision-Language Pre-trained Models](https://arxiv.org/abs/2206.09391)
 
-This is the official PyTorch implementation of the paper "[Universal Adversarial Perturbations for Vision-Language Pre-trained Models](https://arxiv.org/abs/2206.09391)" at *SIGIR 2024*. 
+This is the official PyTorch implementation of the paper "[Universal Adversarial Perturbations for Vision-Language Pre-trained Models](https://arxiv.org/abs/2405.05524)" at *SIGIR 2024*. 
 
 <!-- <img src="img.png" width=500> -->
 
@@ -57,12 +57,7 @@ python Eval_ImgCap_BLIP.py
 ## Citation
 If you find this code to be useful for your research, please consider citing.
 ```
-@inproceedings{zhang2022towards,
-  title={Towards Adversarial Attack on Vision-Language Pre-training Models},
-  author={Zhang, Jiaming and Yi, Qi and Sang, Jitao},
-  booktitle="Proceedings of the 30th ACM International Conference on Multimedia",
-  year={2022}
-}
+
 ```
 
 ## Reference
