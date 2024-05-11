@@ -31,13 +31,13 @@ python Attack_ALBEFTCL.py
 ### Image-Text Retrieval
 ```
 # Eval CLIP models:
-python Eval_CLIP.py
+python Eval_Retrieval_CLIP.py
 
 # Eval ALBEF models:
-python Eval_ALBEF.py
+python Eval_Retrieval_ALBEF.py
 
 # Eval TCL models:
-python Eval_TCL.py
+python Eval_Retrieval_TCL.py
 ```
 
 ### Visual Grounding
