@@ -1,11 +1,11 @@
-train_file: ['/scratch/itee/uqpzha11/Datasets/data/refcoco+_train.json']
-test_file: ['/scratch/itee/uqpzha11/Datasets/data/refcoco+_val.json','/scratch/itee/uqpzha11/Datasets/data/refcoco+_test.json']
+train_file: ['./Datasets/data/refcoco+_train.json']
+test_file: ['./Datasets/data/refcoco+_val.json','./Datasets/data/refcoco+_test.json']
 
 refcoco_data: '/scratch/itee/uqpzha11/Datasets/data'
-det_file: '/scratch/itee/uqpzha11/Datasets/data/refcoco+/dets.json'
+det_file: './Datasets/data/refcoco+/dets.json'
 coco_file: '/scratch/itee/uqpzha11/Datasets/data/refcoco+/cocos.json'
 
-image_root: '/scratch/itee/uqpzha11/Datasets/MSCOCO/'
+image_root: './Datasets/MSCOCO/'
 
 epsilon: 12
 num_iters: 100
