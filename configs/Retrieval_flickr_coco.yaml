@@ -1,5 +1,5 @@
-test_file: '/scratch/itee/uqpzha11/Datasets/data/coco_test.json'
-image_root: '/scratch/itee/uqpzha11/Datasets/MSCOCO/test2014/val2014/'
+test_file: './Datasets/data/coco_test.json'
+image_root: './Datasets/MSCOCO/test2014/val2014/'
 
 bert_config: 'configs/config_bert.json'
 bert_config1: 'configs/config_bert1.json'
