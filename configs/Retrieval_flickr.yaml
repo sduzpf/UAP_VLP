@@ -1,5 +1,5 @@
-test_file: '/scratch/itee/uqpzha11/Datasets/data/flickr30k_test.json'
-image_root: '/scratch/itee/uqpzha11/Datasets/flickr30k_images/'
+test_file: './Datasets/data/flickr30k_test.json'
+image_root: './Datasets/flickr30k_images/'
 
 bert_config: 'configs/config_bert.json'
 
