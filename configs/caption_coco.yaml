@@ -1,12 +1,12 @@
-test_file: '/scratch/itee/uqpzha11/Datasets/data/coco_test.json'
-image_root: '/scratch/itee/uqpzha11/Datasets/MSCOCO/'
-ann_root: '/scratch/itee/uqpzha11/Datasets/MSCOCO/annotations/'
+test_file: './Datasets/data/coco_test.json'
+image_root: './Datasets/MSCOCO/'
+ann_root: './Datasets/MSCOCO/annotations/'
 
 bert_config: 'configs/config_bert.json'
 bert_config1: 'configs/config_bert1.json'
 
 #image_root: '/export/share/datasets/vision/coco/images/'
-coco_gt_root: '/scratch/itee/uqpzha11/Datasets/MSCOCO/annotations/coco_gt'
+coco_gt_root: './Datasets/MSCOCO/annotations/coco_gt'
 
 image_res: 384
 batch_size_train: 32
