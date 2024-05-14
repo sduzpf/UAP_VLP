@@ -22,7 +22,7 @@ Set paths of source/target model names and checkpoints, dataset names and roots,
 
 ```
 # Learn UAPs by taking CLIP as the victim
-python RetrievalEval.py
+python Attack_CLIP.py
 
 # Learn UAPs by taking ALBEF/TCL as the victim 
 python Attack_ALBEFTCL.py
