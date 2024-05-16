@@ -6,7 +6,7 @@ bert_config1: 'configs/config_bert1.json'
 
 image_res: 384
 batch_size_train: 32
-batch_size_test: 16 #16
+batch_size_test: 16
 
 queue_size: 65536
 momentum: 0.995
@@ -16,7 +16,7 @@ temp: 0.07
 k_test: 128
 
 epsilon: 12
-num_iters: 100 #20
+num_iters: 100
 constraint: 'Linf'
 
 alpha: 0.4
