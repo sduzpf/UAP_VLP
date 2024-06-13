@@ -97,8 +97,8 @@ def retrieval_eval(model, ref_model, data_loader, tokenizer, device, config):
             uap_noise = uap_noise.clone().detach().requires_grad_(True)
                 
             #local region of UAP
-            patch_uap_noise = local_transform(uap_noise)
             uap_noise = uap_noise.to(device)
+            patch_uap_noise = local_transform(uap_noise)
             patch_uap_noise = patch_uap_noise.to(device)
                 
             #ScMix    
