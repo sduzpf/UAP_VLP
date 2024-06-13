@@ -94,9 +94,13 @@ def retrieval_eval(model, ref_model, data_loader, tokenizer, device, config):
             images = images.to(device)
             batch_size = images.size(0)
 
+            uap_noise = uap_noise.clone().detach().requires_grad_(True)
+            uap_noise = uap_noise.to(device)
+            patch_uap_noise = local_transform(uap_noise)
+            patch_uap_noise = patch_uap_noise.to(device)
+            
             patch_images = local_img_transform(images)
             patch_images = patch_images.to(device)
-                
             patch_images1 = local_img_transform(images)
             patch_images1 = patch_images1.to(device)
                 
@@ -126,12 +130,6 @@ def retrieval_eval(model, ref_model, data_loader, tokenizer, device, config):
                     image_embed_patch1 = image_output_patch1['image_feat'].flatten(1).detach()
                     
                 image_embed_p = l * image_embed_patch + (1 - l) *image_embed_patch1
-            
-            uap_noise = uap_noise.clone().detach().requires_grad_(True)
-                
-            patch_uap_noise = local_transform(uap_noise)
-            uap_noise = uap_noise.to(device)
-            patch_uap_noise = patch_uap_noise.to(device)
             
             image_adv = torch.clamp(images + uap_noise, 0, 1)
             image_adv1 = torch.clamp(images + patch_uap_noise, 0, 1)
