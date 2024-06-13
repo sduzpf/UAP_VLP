@@ -33,7 +33,7 @@ STEPS = {
     'L2': L2Step,
 }
 
-def random_init(data_shape, norm_type, epsilon):
+def random_init(data_shape, norm_type, epsilon, device):
     delta = torch.zeros(1, *data_shape)
     if norm_type == NormType.Linf:
         delta.data.uniform_(0.0, 1.0)
@@ -62,7 +62,7 @@ def retrieval_eval(model, ref_model, data_loader, tokenizer, device, config):
 
     args.eps = config['epsilon'] / 255.
     if args.random_init:
-        uap_noise = random_init(args.data_shape, NormType.Linf, args.eps)
+        uap_noise = random_init(args.data_shape, NormType.Linf, args.eps, device)
     else:
         uap_noise = torch.zeros(1, *args.data_shape)
  
@@ -455,7 +455,7 @@ if __name__ == '__main__':
     parser.add_argument('--method', default='your method name')
     parser.add_argument('--gpu', type=int, nargs='+', default=[0])
     parser.add_argument('--seed', default=42, type=int)
-    parser.add_argument('--cls', default=False)
+    parser.add_argument('--cls', default=True)
     parser.add_argument('--random_init', default=False)
     parser.add_argument('--original_rank_index_path', default='./std_eval_idx/flickr30k')  
     parser.add_argument('--beta', default=4, type=float, help='hyperparameter beta')
