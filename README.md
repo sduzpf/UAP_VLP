@@ -57,10 +57,11 @@ python Eval_ImgCap_BLIP.py
 ## Citation
 If you find this code to be useful for your research, please consider citing [our paper ](https://arxiv.org/abs/2405.05524).
 ```
-@article{zhang2024universal,
+@inproceedings{zhang2024universal,
   title={Universal Adversarial Perturbations for Vision-Language Pre-trained Models},
   author={Zhang, Peng-Fei and Huang, Zi and Bai, Guangdong},
-  journal={arXiv preprint arXiv:2405.05524},
+  booktitle={Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages={862--871},
   year={2024}
 }
 ```
