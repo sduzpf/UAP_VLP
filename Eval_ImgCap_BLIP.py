@@ -61,6 +61,7 @@ def evaluate(model, data_loader, device, config):
             
         images = images_normalize(t_adv_imgs)
         
+        #if set sample=False, change "med_config = BertConfig.from_json_file(config['bert_config']) in ./models/blip/blip.py as med_config = BertConfig.from_json_file(config['bert_config1'])" 
         captions = model.generate(images, sample=True, num_beams=config['num_beams'], max_length=config['max_length'], 
                                   min_length=config['min_length'])  #sample=False
         
