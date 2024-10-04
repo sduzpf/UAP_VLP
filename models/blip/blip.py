@@ -94,7 +94,7 @@ class BLIP_Decoder(nn.Module):
         
         self.visual_encoder, vision_width = create_vit(vit,image_size, vit_grad_ckpt, vit_ckpt_layer)
         self.tokenizer = init_tokenizer()
-        med_config = BertConfig.from_json_file(config['bert_config'])   
+        med_config = BertConfig.from_json_file(config['bert_config1'])   
         #med_config = BertConfig.from_json_file(med_config)
         med_config.encoder_width = vision_width
         self.text_decoder = BertLMHeadModel(config=med_config)    
