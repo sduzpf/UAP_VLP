@@ -385,7 +385,8 @@ if __name__ == '__main__':
     parser.add_argument('--seed', default=42, type=int)
     parser.add_argument('--cls', default=True)
     parser.add_argument('--original_rank_index_path', default='./std_eval_idx/flickr30k')  
-
+    parser.add_argument('--beta', default=4, type=float, help='hyperparameter beta')
+    
     args = parser.parse_args()
 
     args.cls = False
